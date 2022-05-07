@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gama Academy</title>
+
+    <!-- Criando estilos internos na nossa página e chamar o css (style)-->
+
+    <link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+
+<body>
+    <h1>Super formulário de cadastro de alunos x cursos da Gama Academy</h1> 
+    <h1 class ="cab_especial">Conheça todos os nossos cursos</h1>
+    <h1>Sou um cabeçalho para teste</h1>
+    <!--
+    <h2>Super formulário de cadastro de alunos x cursos da Gama Academy</h2>
+    <h3>Super formulário de cadastro de alunos x cursos da Gama Academy</h3>
+    <h4>Super formulário de cadastro de alunos x cursos da Gama Academy</h4>
+    <h5>Super formulário de cadastro de alunos x cursos da Gama Academy</h5>
+    <h6>Super formulário de cadastro de alunos x cursos da Gama Academy</h6>
+    -->
+    <!--Criando um formulário-->
+
+    <form id="cadastro" method="post">
+        <label>Nome do Aluno:</label>
+        <input type= "text" name="nome_aluno" class=".formatacao_campos" placeholder="Digite o seu nome" required maxlength="30" oninvalid="this.setCustomValidity('Você deve preencher este campo Obrigatoriamente')"onchange="try{setCustomValidity('')}catch(e){}"><br><br>
+        <label>Email Aluno:</label>
+        <input type="email" name="email_aluno" class=".formatacao_campos" placeholder="Digite o e-mail" required>
+        <br>
+        <input type="submit" value="Enviar">
+
+</body>
+</html>
